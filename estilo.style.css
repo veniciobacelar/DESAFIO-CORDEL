@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'cordel';
+    src: url(eldes_cordel/EldesCordel-Demo.otf) format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte01:'cordel';
+    --fonte02: Arial, Helvetica, sans-serif;
+    --fonte03: 'Sriracha', cursive;
+}
+
+*{ /*seletor global*/
+    margin: 0px; /*tirar todas as margins*/
+    padding: 0px; /*tirar todos os paddings*/
+}
+
+html,body{ 
+    min-height: 100vh;
+    background-color: rgb(177, 137, 38);
+}
+
+main{
+    border-radius: 20px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.336);
+   
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+}
+
+header h1{
+    font-family: var(--fonte01);
+    padding-top: 50px;
+    font-variant: small-caps; /*deixar tudo maiúsculos com a primeira letra de cada palavra maior*/
+    font-size: 70px;
+}
+
+header p{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-family: var(--fonte02);
+    font-weight: bold;
+}
+
+header a{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+nav{
+    background-color: black;
+    padding: 10px;
+}
+
+nav a{
+    background-color: goldenrod;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--fonte01);
+    font-weight: 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+section{
+    font-family: var(--fonte03);
+    font-size: 20px;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;   
+}
+
+#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+.normal{
+    background-color: white;
+}
+
+.imagem{
+    background-color: rgb(48, 47, 47);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px black;
+}
+
+.imagem > p{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block; /*para adaptar a caixa ao tamanho do conteúdo*/
+    text-shadow: 2px 2px 2px black;
+}
+
+#boder{
+    border-radius: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: var(--fonte01);
+    font-size: 20px; 
+}
